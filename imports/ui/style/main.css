@@ -1,0 +1,21 @@
+/* CSS declarations go here */
+html{
+    background: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#render-target{
+    background: white;
+}
+
+@media (max-width: 750px){
+
+    html {
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,278 @@
+hr{
+    border: 1px #e7ebee solid;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*-----Rotating Text Styling in Homepage-----*/
+.react-rotating-text-cursor {
+    font-size: 4rem;
+    color: #FB4473;
+    animation: blinking-cursor 1.5s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*-----Arrow Icon on Buttons-----*/
+i.arrow {
+    margin-left: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+
+    animation: blinking-arrow 1.5s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-arrow {
+    0% {
+        transform:translateX(0) rotate(-45deg);
+    }
+    50% {
+        transform:translateX(10px) rotate(-45deg);
+    }
+    100% {
+        transform:translateX(0) rotate(-45deg);
+    }
+}
+
+/*-----Pulsating Icons-----*/
+i.pulse{
+    margin-left: 10px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+
+    animation: pulse 1.5s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*-----Icon Oriented Left-----*/
+.sideIconL{
+    margin-top: 5rem;
+    position: absolute;
+    left: -15rem;
+    color: #FB4473;
+    font-size: 20rem;
+}
+
+/*-----Icon Oriented Right-----*/
+.sideIconR{
+    margin-top: 5rem;
+    position: absolute;
+    right: -15rem;
+    color: dodgerblue;
+    font-size: 20rem;
+}
+
+/*-----Title Decorator-----*/
+.stripe-top{
+    border: solid 2px;
+    text-align: center;
+    display: block;
+    width: 75px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+/*-----Default Button-----*/
+#bootstrap-overrides .btn{
+    outline: none;
+    border: none;
+    color: white;
+    padding: .75rem 3rem;
+    background: #1F1F1F;
+    box-shadow: none;
+}
+#bootstrap-overrides .btn:hover,
+#bootstrap-overrides .btn:focus,
+#bootstrap-overrides .btn:active{
+    background: #373737;
+    color: white;
+}
+
+/*-----Empty Button-----*/
+#bootstrap-overrides .emptyButton,
+#bootstrap-overrides .emptyButton:hover,
+#bootstrap-overrides .emptyButton:focus,
+#bootstrap-overrides .emptyButton:active{
+    color: black;
+    background: transparent;
+}
+
+/*-----Pink Button-----*/
+#bootstrap-overrides .pinkButton{
+    background: #FB4473;
+    color: white;
+}
+
+#bootstrap-overrides .pinkButton:hover,
+#bootstrap-overrides .pinkButton:focus,
+#bootstrap-overrides .pinkButton:active{
+    color: white;
+    background: #e53e69;
+}
+
+/*-----Blue Button-----*/
+#bootstrap-overrides .blueButton{
+    color: white;
+    background: dodgerblue;
+}
+#bootstrap-overrides .blueButton:hover,
+#bootstrap-overrides .blueButton:focus,
+#bootstrap-overrides .blueButton:active{
+    color: white;
+    background: #1b84e9;
+}
+
+/*-----Purple Button-----*/
+#bootstrap-overrides .purpleButton{
+    color: white;
+    background: #8900FF;
+}
+#bootstrap-overrides .purpleButton:hover,
+#bootstrap-overrides .purpleButton:focus,
+#bootstrap-overrides .purpleButton:active{
+    color: white;
+    background: #8100f1;
+}
+
+/*-----Orange Button-----*/
+#bootstrap-overrides .orangeButton{
+    color: white;
+    background: #ED903D;
+}
+#bootstrap-overrides .orangeButton:hover,
+#bootstrap-overrides .orangeButton:focus,
+#bootstrap-overrides .orangeButton:active{
+    color: white;
+    background: #e0883a;
+}
+
+/*-----Big Button-----*/
+#bootstrap-overrides .bigButton{
+    color: white;
+    padding: .75rem 7rem!important;
+}
+
+/*-----Small Button-----*/
+#bootstrap-overrides .smallButton{
+    padding: .75rem 1rem!important;
+}
+
+
+/*-----Slider Component-----*/
+.rc-slider-track{
+    background-color: #1E86F3!important;
+}
+
+.rc-slider-tooltip-arrow{
+    background: none!important;
+    border: none!important;
+}
+
+/*-----Inline Class-----*/
+.inline{
+    display: inline;
+}
+
+/*-----Input Settings-----*/
+input{
+    transition: all .3s ease-in-out;
+    border: 1px solid #CBCBCB;
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid #1E86F3;
+}
+
+input:disabled{
+    color: #CBCBCB;
+}
+
+/*-----Big Input Settings-----*/
+.bigInput{
+    padding: .6rem;
+}
+
+/*-----Small Input Settings-----*/
+.minInput{
+    padding: .2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CBCBCB;
+    width: 150px;
+    display: inline;
+    text-align: center!important;
+    margin-left: 10px;
+}
+
+.minInput:focus{
+    border:none;
+    border-bottom: 1px solid #1E86F3;
+}
+
+#bootstrap-overrides .contact-form .bigInput{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/*-----Responsive Settings-----*/
+@media (max-width: 750px){
+
+    .sideIconL{
+        position: relative;
+        left: 0;
+        margin: auto;
+        color: #FB4473;
+        font-size: 20rem;
+    }
+
+    .sideIconR{
+        position: relative;
+        right: 0;
+        margin: auto;
+        color: #1E86F3;
+        font-size: 20rem;
+    }
+
+    #bootstrap-overrides .btn{
+        padding: .5rem 2rem;
+    }
+
+    /*-----Big Button-----*/
+    #bootstrap-overrides .bigButton{
+        padding: .5rem 4rem!important;
+    }
+
+    /*-----Small Button-----*/
+    #bootstrap-overrides .smallButton{
+        padding: .5rem .75rem!important;
+    }
+
+
+}
